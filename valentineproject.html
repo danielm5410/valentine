@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Our Story Through the Years</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #2d0036 0%, #4b006e 100%);
+        }
+        .gallery-item {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 50;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            align-items: center;
+            justify-content: center;
+        }
+        .modal.show {
+            display: flex;
+        }
+        .modal-content {
+            background-color: white;
+            padding: 40px;
+            border-radius: 12px;
+            text-align: center;
+            max-width: 500px;
+            animation: slideIn 0.3s ease-out;
+        }
+        @keyframes slideIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen py-12 px-4">
+    <div class="max-w-6xl mx-auto">
+        <!-- Header -->
+        <div class="text-center mb-16">
+            <h1 class="text-5xl font-bold text-white mb-2">Hi baby chloe</h1>
+            <h2 class="text-3xl font-semibold text-white opacity-90">i mih u</h2>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="space-y-12">
+            <!-- Year 1 -->
+            <div class="space-y-6">
+                <h2 class="text-4xl font-bold text-white text-center mb-8">Year 1</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-lg">
+                        <div class="relative aspect-square bg-gray-200">
+                            <img src="firstmet.jpg" alt="Year 1 - Memory 1" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4 bg-gray-50">
+                            <p class="text-gray-700 text-sm">This is when we first met and you picked me up from the airport and you were like 
+                                i not awkward while you were being awkward and kept looking at me and being awkward k. and then we fuh and we 
+                                went to six flags and we also got into car crash and ate yummy hot pot after are we fat no you are k. and i wanted 
+                                to throw up afterwards cus i was sad sigh and i was so full.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-lg">
+                        <div class="relative aspect-square bg-gray-200">
+                            <img src="secondtimewemetdecember.jpg" alt="Year 1 - Memory 2" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4 bg-gray-50">
+                            <p class="text-gray-700 text-sm">I feel like this time was so nostalgic there was so much to do and we did alot and thats when we got more comfortable with each other and
+                                we ate the same things so our farts and our poops and burps are the same and we also went to dave n busters and idk we did alot and it was so new and it was super fun.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-lg">
+                        <div class="relative aspect-square bg-gray-200">
+                            <img src="secontimewemetphoto.jpg" alt="Year 1 - Memory 3" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4 bg-gray-50">
+                            <p class="text-gray-700 text-sm">This is also the second time we met in December this is our first photo booth wow we are both skeeny queens</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-lg">
+                        <div class="relative aspect-square bg-gray-200">
+                            <img src="janurary.jpg" alt="Year 1 - Memory 4" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4 bg-gray-50">
+                            <p class="text-gray-700 text-sm">Oh brother this was the third time we met in Janurary and where am i looking at and i think we both got so fat after this cus i stayed
+                                extra long and we ate so much and this was when you started being big baby and omg we went to life time and we ate hungry cow and it was super yummy and i think we were
+                                super tired it was super fun and then we went aquarium and you left me by myself at the airport for 8 hours k.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-lg">
+                        <div class="relative aspect-square bg-gray-200">
+                            <img src="march.jpg" alt="Year 1 - Memory 5" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4 bg-gray-50">
+                            <p class="text-gray-700 text-sm">This was march and i remeber i waited the whole day at airport because of snow and i couldnt make it but i stayed like 4 days extra and we got super duper fat 
+                                and bloated oh boy and we went to texas roadhouse and we also went to coca cola museum and the last day we had like rumis kitchen and i look super fat k and then i went home sigh.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-lg">
+                        <div class="relative aspect-square bg-gray-200">
+                            <img src="endoffirstyear.jpg" alt="Year 1 - Memory 6" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4 bg-gray-50">
+                            <p class="text-gray-700 text-sm">This is our anniversary and the first time you came to new york it was super fun i remeber we went to that place in georgia where we could go kart and spray water
+                                on each other and mini golf but we didnt get to go kart because of your slippers sigh and then we went to gym and omg i met your parents for the first time with that ugly ass haircut and 
+                                you were drunk crying LMFAOOO anyways then we went swimmin in seniis backyard and we carried each other around and you almost drowned and got made at me because gosh im so funny am i right heh
+                                and then you took that picture of your empire state building in georgia and then we spent the whole day in atlanta rotting around and the plane ride was so fun and then we landed met up with jimmy uba and
+                                gen and had some mid ass kbbq and took cool pictures and then we went to governors island to bike with your forehead out and then we went out for our anniversary and we were moggers omg and we also went
+                                to american dream water park and then the next day you couldnt get on your flight and danerr i crying oh boy and so we went another day to like ball pit park thingy with jadon uba mohamed and them
+                                and you kept wanting to go to times square and then you leave me k.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-lg">
+                        <div class="relative aspect-square bg-gray-200">
+                            <img src="ohboy.jpg" alt="Year 1 - Memory 7" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4 bg-gray-50">
+                            <p class="text-gray-700 text-sm">oh boy</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-lg">
+                        <div class="relative aspect-square bg-gray-200">
+                            <img src="wow.jpg" alt="Year 1 - Memory 8" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4 bg-gray-50">
+                            <p class="text-gray-700 text-sm">wow look at us we look so good what happened now we fatty patty especially you</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Year 2 -->
+            <div class="space-y-6">
+                <h2 class="text-4xl font-bold text-white text-center mb-8">Year 2</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-lg">
+                        <div class="relative aspect-square bg-gray-200">
+                            <img src="blackpink.jpg" alt="Year 2 - Memory 1" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4 bg-gray-50">
+                            <p class="text-gray-700 text-sm">This was when we somehow had a miracle and you came another time at the end of july wow and we went to the concert and ate alot and where i crashed
+                                my car sigh and you eat your little bul dak and wingstop fatty patty.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-lg">
+                        <div class="relative aspect-square bg-gray-200">
+                            <img src="kalahari.jpg" alt="Year 2 - Memory 2" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4 bg-gray-50">
+                            <p class="text-gray-700 text-sm">This was us at kalahari with uba and gen and it was alot of fun and you crashing out alot k we should go again and we also went to go karting and that was
+                                also alot of fun yippie and then we went to mid ass umi and you got mad at me for not peeling yo damn crabs ok fine i will peel k and then you also play your little truck
+                                driving sim and ig youre a good driver ig and then you left me and you cry.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-lg">
+                        <div class="relative aspect-square bg-gray-200">
+                            <img src="bing.jpg" alt="Year 2 - Memory 3" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4 bg-gray-50">
+                            <p class="text-gray-700 text-sm">damn this was the time you took that 16 hour car ride and we went to wooga or whatever it was called and it was ok and you fell asleep on my arm
+                                and drooled and wanted 10 extra minutes at the h mart parking lot because you wanted to sleep and you kept drooling on my arm
+                                and you came to bing and you jumping up and down on me at the party squeezing my face singing along and holding onto my leg and then we got a hotel and we got drunk and fuh and your little cheese steak
+                                you were crying over because you were drunk and i was being mean some how and then you also giggling and rolling away on the bed and oh yeah we also went to texas roadhouse that was pretty yummy and then 
+                                i drove you back to fort lee and you kept drooling and falling asleep on my arm and you forgot you charger i still have it whatever ok arm drooler.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-lg">
+                        <div class="relative aspect-square bg-gray-200">
+                            <img src="september2025.jpg" alt="Year 2 - Memory 4" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4 bg-gray-50">
+                            <p class="text-gray-700 text-sm">This was when i had like a week break in september and i came and this time we didnt have much to do it was just us rotting and we went to e gyu and dave n busters and then
+                                you did my eye brows k i dont have unibrow k whatever oh yeah we went to fair and you were fucking up that turkey leg fatty holy k and everything else was ok and omg that ride we were both holding on
+                                for dear life god damn ts was not a joke and then we went to pokkido and you were scared to go down slide and i went down that other slide and i fell over and you make fun of me and then you got drunk
+                                again i think this was the time we drank a whole bottle oh boy never again and we both felt like poop and we were gonna die and then you left me k
+                            </p>
+                        </div>
+                    </div>
+                    <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-lg">
+                        <div class="relative aspect-square bg-gray-200">
+                            <img src="december2025.jpg" alt="Year 2 - Memory 5" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4 bg-gray-50">
+                            <p class="text-gray-700 text-sm">This was us in december and it was fun we didnt stay long in georgia and i will not be putting the pic of me on the toilet but we didnt eat much in atlanta but we had that airport
+                                food the shrimp that you like and our flight was delayed for 8 hours and we both rotted and you used my laptop like an ipad and we played that brainrot vending machine game oh boy but the next day we went to bryant
+                                street market and you had that hot dog and it was very yummy and that birria but it was mid sigh and yeah we had jongro and ts was also mid waste of our money sigh and then we went to american dream 
+                                and i wasnt feeling too well sorry and you crash out on my ok finger nail gr but the rides were fun and we went to all of them and then we went back to flushing for them chili noodles that you love so much and we went to go
+                                pet them cats and we also got adels when those stinky indians skipped our line and i remember when you got scared of the lego that popped up LMFAOO and we ate the adels halal food at central park
+                                and we went home super tired and then i think the next day we went over to my grandmas house and you took a picture of her and oh yeah i forgot we went shopping too for them clothes my mom giving you money 
+                                and we brought bagels and you were sobbing away awww so cute and you went home daner dont leave me daner dont leave me
+                            </p>
+                        </div>
+                    </div>
+                    <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-lg">
+                        <div class="relative aspect-square bg-gray-200">
+                            <img src="molerat.jpg" alt="Year 2 - Memory 6" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4 bg-gray-50">
+                            <p class="text-gray-700 text-sm">this is the most recent time in janurary and we didnt take much pics and i dont have pics of us but this is you so skinny wowie ok molerat k heh
+                                anyways we just rotted this time and we didnt do much but it was fun because we cook and you crash out on my ok i make better fries ok i cook better bul dak and obviously my steak
+                                is better heh and omg the bq wings was so good am i fat and the soup and rice was so good omg we ate alot of yummy food we didnt do much but we did drink and fuh alot heh oh yeah and we also
+                                went gym and basically all we did was rot and eat and rot and eat and rot and eat and then i almost missed my flight by like 5 minutes and you leave me sigh.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Valentine Section -->
+        <div class="mt-16 pt-12 border-t-4 border-white">
+            <h1 class="text-5xl font-bold text-white text-center mb-2">Will you be my Valentine?</h1>
+            <div class="text-center mb-8">
+                <span class="text-lg text-purple-200">cant say no chigga</span>
+            </div>
+            <div class="flex gap-6 justify-center">
+                <button onclick="showYippie()" class="bg-red-500 hover:bg-red-600 text-white font-bold py-4 px-8 rounded-lg text-2xl transition transform hover:scale-105">
+                    Yes
+                </button>
+                <button onclick="showYippie()" class="bg-red-500 hover:bg-red-600 text-white font-bold py-4 px-8 rounded-lg text-2xl transition transform hover:scale-105">
+                    Yes
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Popup -->
+    <div id="yippieModal" class="modal">
+        <div class="modal-content">
+            <h2 class="text-5xl font-bold text-red-500 mb-6">japppieieieie </h2>
+            <img src="celebrate.jpg" alt="Yippie!" class="mx-auto rounded-lg mb-6 max-w-xs w-full h-auto" style="max-height: 250px; object-fit: contain;">
+            <button onclick="closeModal()" class="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-6 rounded-lg">
+                Close
+            </button>
+        </div>
+    </div>
+
+    <script>
+        function showYippie() {
+            document.getElementById('yippieModal').classList.add('show');
+        }
+        function closeModal() {
+            document.getElementById('yippieModal').classList.remove('show');
+        }
+        window.onclick = function(event) {
+            const modal = document.getElementById('yippieModal');
+            if (event.target === modal) {
+                modal.classList.remove('show');
+            }
+        }
+    </script>
+</body>
+</html>
